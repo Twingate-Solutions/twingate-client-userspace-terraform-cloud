@@ -1,0 +1,78 @@
+# --- Claude Code / AI assistant files (kept local, never published) ---
+CLAUDE.md
+CLAUDE.local.md
+**/CLAUDE.md
+**/CLAUDE.local.md
+.claude/
+**/.claude/
+.mcp.json
+# Planning docs written for/by Claude. Note: docs/ itself is tfplugindocs output and IS published.
+docs/TECHNICAL_PLAN.md
+docs/claude/
+.notes/
+
+# --- Go ---
+# Build output
+/bin/
+/dist/
+/terraform-provider-twingatetunnel
+/terraform-provider-twingatetunnel.exe
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+# Test binaries and coverage
+*.test
+*.out
+coverage.*
+*.coverprofile
+profile.cov
+# Local workspace / module-env style state
+go.work
+go.work.sum
+vendor/
+.gopath/
+.gocache/
+.gomodcache/
+
+# --- Environment / secrets ---
+.env
+.env.*
+!.env.example
+.envrc
+.direnv/
+*.pem
+*.key
+service_key*.json
+
+# --- Terraform ---
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+*.tfplan
+
+# --- Editors / OS ---
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# --- Runtime logs ---
+*.log
+
+# Provider binaries placed for local/HCP testing of examples
+terraform.d/
